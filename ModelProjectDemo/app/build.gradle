@@ -1,5 +1,13 @@
 apply plugin: 'com.android.application'
 android {
+    signingConfigs {
+        release {
+            keyAlias 'diyishuji-release'
+            keyPassword 'dysj2016'
+            storeFile file('D:/project/Chairman-Android/diyishuji-release.jks')
+            storePassword 'dysj2016'
+        }
+    }
     compileSdkVersion 28
     defaultConfig {
         applicationId "guandong.com.modelprojectdemo"
@@ -19,6 +27,10 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.release
         }
     }
 }
