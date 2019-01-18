@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity.NewsMainActivity">
+    tools:context=".NewsMainActivity">
     <TextView
+        android:id="@+id/newsTextView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="kotlin file"
+        android:layout_height="match_parent"
+        android:text="news main"
         />
-
 </LinearLayout>

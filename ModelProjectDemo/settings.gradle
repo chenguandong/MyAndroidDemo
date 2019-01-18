@@ -1,1 +1,1 @@
-include ':app', ':basemodel', ':MettingModel'
+include ':app', ':basemodel', ':MettingModel', ':NewsModel'

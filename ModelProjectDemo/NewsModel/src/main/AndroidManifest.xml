@@ -3,7 +3,7 @@
     package="guandong.com.newsmodel">
 
     <application>
-        <activity android:name=".activity.NewsMainActivity"></activity>
+        <activity android:name=".NewsMainActivity"></activity>
     </application>
 
 </manifest>

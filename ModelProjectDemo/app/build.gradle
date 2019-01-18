@@ -25,13 +25,10 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-
-
     implementation project(':basemodel')
     implementation project(':MettingModel')
-
     annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
-
+    implementation project(':NewsModel')
 }
 repositories {
     mavenCentral()
