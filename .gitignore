@@ -9,3 +9,7 @@
 /build
 /captures
 .externalNativeBuild
+ModelProjectDemo/.idea/
+ModelProjectDemo/app/build/
+ModelProjectDemo/local.properties
+.idea/vcs.xml
