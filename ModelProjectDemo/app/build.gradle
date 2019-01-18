@@ -4,7 +4,7 @@ android {
         release {
             keyAlias 'diyishuji-release'
             keyPassword 'dysj2016'
-            storeFile file('D:/project/Chairman-Android/diyishuji-release.jks')
+            storeFile file('../diyishuji-release.jks')
             storePassword 'dysj2016'
         }
     }
