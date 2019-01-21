@@ -9,7 +9,11 @@
     <Button
         android:id="@+id/helloButton"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:text="Arouter 点击传参 给MettingActivity"
         />
+    <TextView
+        android:id="@+id/helloTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>

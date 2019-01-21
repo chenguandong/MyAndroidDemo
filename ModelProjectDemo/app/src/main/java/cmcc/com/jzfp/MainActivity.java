@@ -26,7 +26,9 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.buttonKotlin).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ARouter.getInstance().build("/news/newsMain").navigation();
+                ARouter.getInstance().build("/news/newsMain")
+                        .withString("name","hello 新闻模块")
+                        .navigation();
             }
         });
     }

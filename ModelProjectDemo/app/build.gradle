@@ -33,11 +33,11 @@ android {
             //signingConfig signingConfigs.release
         }
     }
+
 }
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-
     annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
     if (!isModule.toBoolean()) {
         implementation project(':basemodel')

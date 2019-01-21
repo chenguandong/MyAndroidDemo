@@ -9,7 +9,12 @@
     <TextView
         android:id="@+id/newsTextView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:text="news main"
         />
+    <Button
+        android:id="@+id/shareButton"
+        android:text="分享"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>
