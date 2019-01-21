@@ -31,7 +31,7 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation project(':basemodel')
+    implementation project(':BaseModule')
     annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
     implementation 'com.github.bumptech.glide:glide:4.8.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
