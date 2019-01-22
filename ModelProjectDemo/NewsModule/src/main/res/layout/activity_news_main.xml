@@ -17,4 +17,9 @@
         android:text="分享"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/resultButton"
+        android:text="start activity for result!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>

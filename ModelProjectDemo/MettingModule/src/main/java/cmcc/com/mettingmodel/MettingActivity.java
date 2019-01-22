@@ -32,7 +32,7 @@ public class MettingActivity extends AppCompatActivity implements View.OnClickLi
         mText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ARouter.getInstance().build("/ttt/activity").withString("name","我是传参").navigation();
+                ARouter.getInstance().build("/app/HelloActivity").withString("name","我是传参").navigation();
 
             }
         });

@@ -11,7 +11,7 @@ import com.alibaba.android.arouter.launcher.ARouter;
 
 import org.greenrobot.eventbus.EventBus;
 
-@Route(path = "/ttt/activity")
+@Route(path = "/app/HelloActivity")
 public class HelloActivity extends AppCompatActivity {
     @Autowired
     public String name;

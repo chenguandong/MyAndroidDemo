@@ -2,8 +2,10 @@ package cmcc.com.jzfp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Toast;
 
 import com.alibaba.android.arouter.launcher.ARouter;
 
@@ -26,10 +28,22 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.buttonKotlin).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ARouter.getInstance().build("/news/newsMain")
+                ARouter.getInstance().build("/NewsModule/NewsMainActivity")
                         .withString("name","hello 新闻模块")
-                        .navigation();
+                        .navigation(MainActivity.this,666);
             }
         });
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode!=RESULT_OK){
+            return;
+        }
+        if (requestCode==666){
+            String result = data.getStringExtra("data");
+            Toast.makeText(MainActivity.this,result,Toast.LENGTH_LONG).show();
+        }
     }
 }
