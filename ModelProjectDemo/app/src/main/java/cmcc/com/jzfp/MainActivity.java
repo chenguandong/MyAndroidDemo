@@ -33,6 +33,15 @@ public class MainActivity extends AppCompatActivity {
                         .navigation(MainActivity.this,666);
             }
         });
+
+        findViewById(R.id.buttonDemo).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                ARouter.getInstance().build("/DemoModule/DemoMainActivity")
+                        .navigation();
+            }
+        });
     }
 
     @Override

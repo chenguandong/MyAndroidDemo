@@ -44,6 +44,7 @@ dependencies {
         implementation project(':MettingModule')
         implementation project(':NewsModule')
     }
+    implementation project(':DemoModule')
 }
 repositories {
     mavenCentral()

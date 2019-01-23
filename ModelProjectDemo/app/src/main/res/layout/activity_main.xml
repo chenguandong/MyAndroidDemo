@@ -21,4 +21,11 @@
         android:text="跳转到Kotlin编写的新闻模块"
         />
 
+    <Button
+        android:id="@+id/buttonDemo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Demo"
+        />
+
 </LinearLayout>
